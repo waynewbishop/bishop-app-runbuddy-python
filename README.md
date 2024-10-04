@@ -1,6 +1,6 @@
 # Run Buddy: AI-Powered Running Outfit Recommender
 
-Run Buddy is an innovative iOS application that leverages machine learning to provide personalized running outfit recommendations based on current weather conditions. This repository contains the backend implementation of the Run Buddy system.
+[Run Buddy](https://github.com/waynewbishop/bishop-app-runbuddy-swift) is an innovative iOS application that leverages machine learning to provide personalized running outfit recommendations based on current weather conditions. This repository contains the backend implementation of the Run Buddy system.
 
 ## Project Overview
 

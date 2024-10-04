@@ -1,0 +1,141 @@
+Temperature,Humidity,WindSpeed,Precipitation,TimeOfDay,Elevation,Duration,Terrain,MovingTime,ClothingCategory
+68,85,7,Light Rain,Morning,150,45,Road,43,Light
+35,30,12,None,Afternoon,300,60,Trail,58,Medium
+72,85,5,Heavy Rain,Evening,50,30,Track,29,Light
+55,95,8,None,Early Morning,200,90,Mixed,87,Medium
+28,70,15,Snow,Night,800,120,Trail,115,Heavy
+80,60,3,None,Afternoon,20,25,Track,24,Very Light
+45,55,10,None,Morning,400,180,Road,175,Light
+62,75,6,Light Rain,Evening,100,45,Mixed,43,Light
+38,40,14,None,Early Morning,600,210,Trail,205,Medium
+75,90,4,None,Afternoon,30,35,Track,34,Very Light
+50,80,9,Heavy Rain,Morning,250,60,Road,58,Medium
+32,60,13,Light Snow,Night,700,90,Trail,87,Heavy
+70,45,5,None,Evening,150,40,Mixed,38,Light
+42,65,11,None,Morning,350,150,Road,145,Medium
+82,70,3,None,Afternoon,25,28,Track,27,Very Light
+48,75,8,Light Rain,Evening,500,75,Mixed,72,Light
+30,35,16,None,Night,900,120,Trail,115,Heavy
+65,80,6,Heavy Rain,Morning,100,35,Road,33,Light
+40,60,12,None,Afternoon,450,180,Mixed,175,Medium
+78,55,4,None,Evening,50,30,Track,29,Very Light
+52,70,9,Light Rain,Early Morning,300,65,Road,63,Medium
+33,40,15,Snow,Night,750,100,Trail,96,Heavy
+68,85,5,Heavy Rain,Afternoon,200,45,Mixed,43,Light
+45,50,11,None,Morning,550,210,Road,205,Medium
+85,75,3,None,Evening,30,25,Track,24,Very Light
+58,90,7,Light Rain,Afternoon,400,70,Mixed,67,Medium
+25,30,17,None,Night,1000,135,Trail,130,Heavy
+72,60,6,None,Morning,150,40,Road,38,Light
+37,70,13,Light Snow,Evening,650,95,Mixed,92,Medium
+80,85,4,Heavy Rain,Afternoon,50,30,Track,29,Very Light
+48,65,10,None,Morning,350,160,Road,155,Light
+32,45,14,None,Night,800,110,Trail,106,Heavy
+70,80,5,Light Rain,Evening,250,55,Mixed,53,Light
+43,55,12,None,Early Morning,500,200,Road,195,Medium
+76,50,3,None,Afternoon,20,28,Track,27,Very Light
+55,75,8,Heavy Rain,Morning,300,65,Mixed,62,Medium
+28,35,16,Snow,Night,950,130,Trail,125,Heavy
+68,90,6,Light Rain,Afternoon,100,40,Road,38,Light
+40,60,11,None,Evening,400,170,Mixed,165,Medium
+82,85,4,Heavy Rain,Morning,30,25,Track,24,Very Light
+50,70,9,None,Afternoon,600,85,Trail,82,Medium
+35,40,15,Light Snow,Night,700,100,Mixed,96,Heavy
+72,55,5,None,Morning,200,50,Road,48,Light
+45,65,10,None,Evening,450,190,Mixed,185,Medium
+78,80,3,Light Rain,Afternoon,50,30,Track,29,Very Light
+52,85,7,Heavy Rain,Morning,350,70,Road,67,Medium
+30,35,16,None,Night,1050,140,Trail,135,Heavy
+68,75,6,Light Rain,Afternoon,150,45,Mixed,43,Light
+42,60,12,None,Evening,550,205,Road,200,Medium
+85,70,4,None,Morning,25,28,Track,27,Very Light
+56,90,8,Heavy Rain,Afternoon,400,75,Mixed,72,Medium
+26,30,17,Snow,Night,900,125,Trail,120,Heavy
+70,85,5,Light Rain,Morning,200,50,Road,48,Light
+38,55,13,None,Evening,650,215,Mixed,210,Medium
+80,60,3,None,Afternoon,30,25,Track,24,Very Light
+48,75,9,Heavy Rain,Morning,300,65,Road,62,Medium
+33,40,15,Light Snow,Night,750,105,Trail,101,Heavy
+66,85,6,Light Rain,Afternoon,100,40,Mixed,38,Light
+44,60,11,None,Evening,500,195,Road,190,Medium
+76,80,4,Heavy Rain,Morning,50,30,Track,29,Very Light
+54,70,8,None,Afternoon,350,70,Mixed,67,Medium
+28,35,16,Snow,Night,1000,135,Trail,130,Heavy
+72,90,5,Light Rain,Morning,150,45,Road,43,Light
+40,55,12,None,Evening,600,210,Mixed,205,Medium
+82,75,3,None,Afternoon,20,28,Track,27,Very Light
+50,85,9,Heavy Rain,Morning,400,75,Road,72,Medium
+34,40,14,None,Night,850,115,Trail,111,Heavy
+68,80,6,Light Rain,Afternoon,200,50,Mixed,48,Light
+46,65,10,None,Evening,450,185,Road,180,Medium
+78,70,4,None,Morning,30,25,Track,24,Very Light
+52,90,8,Heavy Rain,Afternoon,300,65,Mixed,62,Medium
+30,35,15,Snow,Night,950,130,Trail,125,Heavy
+70,85,5,Light Rain,Morning,100,40,Road,38,Light
+42,60,11,None,Evening,550,200,Mixed,195,Medium
+84,75,3,None,Afternoon,25,28,Track,27,Very Light
+56,80,7,Heavy Rain,Morning,350,70,Road,67,Medium
+26,30,16,None,Night,1100,145,Trail,140,Heavy
+66,90,6,Light Rain,Afternoon,150,45,Mixed,43,Light
+44,55,12,None,Evening,500,190,Road,185,Medium
+76,70,4,None,Morning,50,30,Track,29,Very Light
+54,85,8,Heavy Rain,Afternoon,400,75,Mixed,72,Medium
+32,40,15,Light Snow,Night,800,110,Trail,106,Heavy
+68,75,5,None,Morning,200,55,Road,53,Light
+40,65,11,None,Evening,600,205,Mixed,200,Medium
+80,80,3,Light Rain,Afternoon,30,25,Track,24,Very Light
+48,90,9,Heavy Rain,Morning,350,70,Road,67,Medium
+34,35,14,Snow,Night,900,125,Trail,120,Heavy
+72,85,6,Light Rain,Afternoon,100,40,Mixed,38,Light
+46,60,10,None,Evening,450,180,Road,175,Medium
+78,75,4,None,Morning,25,28,Track,27,Very Light
+50,80,8,Heavy Rain,Afternoon,300,65,Mixed,62,Medium
+28,30,16,None,Night,1050,140,Trail,135,Heavy
+70,90,5,Light Rain,Morning,150,45,Road,43,Light
+42,55,12,None,Evening,550,195,Mixed,190,Medium
+82,70,3,None,Afternoon,20,28,Track,27,Very Light
+52,85,7,Heavy Rain,Morning,400,75,Road,72,Medium
+36,40,13,Light Snow,Night,750,105,Trail,101,Heavy
+68,80,6,Light Rain,Afternoon,200,50,Mixed,48,Light
+44,65,11,None,Evening,500,185,Road,180,Medium
+76,75,4,None,Morning,50,30,Track,29,Very Light
+54,90,8,Heavy Rain,Afternoon,350,70,Mixed,67,Medium
+30,35,15,Snow,Night,950,130,Trail,125,Heavy
+70,85,5,Light Rain,Morning,100,40,Road,38,Light
+40,60,12,None,Evening,600,210,Mixed,205,Medium
+84,80,3,None,Afternoon,25,28,Track,27,Very Light
+56,75,7,Heavy Rain,Morning,300,65,Road,62,Medium
+26,30,16,None,Night,1100,145,Trail,140,Heavy
+66,90,6,Light Rain,Afternoon,150,45,Mixed,43,Light
+42,55,11,None,Evening,550,200,Road,195,Medium
+78,70,4,None,Morning,30,25,Track,24,Very Light
+52,85,8,Heavy Rain,Afternoon,400,75,Mixed,72,Medium
+32,40,14,Light Snow,Night,800,110,Trail,106,Heavy
+68,80,5,None,Morning,200,55,Road,53,Light
+38,65,13,None,Evening,650,215,Mixed,210,Medium
+80,75,3,Light Rain,Afternoon,50,30,Track,29,Very Light
+48,90,9,Heavy Rain,Morning,350,70,Road,67,Medium
+34,35,15,Snow,Night,900,125,Trail,120,Heavy
+72,85,6,Light Rain,Afternoon,100,40,Mixed,38,Light
+46,60,10,None,Evening,450,180,Road,175,Medium
+76,80,4,None,Morning,25,28,Track,27,Very Light
+50,75,8,Heavy Rain,Afternoon,300,65,Mixed,62,Medium
+28,30,16,None,Night,1050,140,Trail,135,Heavy
+70,90,5,Light Rain,Morning,150,45,Road,43,Light
+44,55,11,None,Evening,500,190,Mixed,185,Medium
+82,70,3,None,Afternoon,20,28,Track,27,Very Light
+54,85,7,Heavy Rain,Morning,400,75,Road,72,Medium
+36,40,13,Light Snow,Night,750,105,Trail,101,Heavy
+68,80,6,Light Rain,Afternoon,200,50,Mixed,48,Light
+42,65,12,None,Evening,600,205,Road,200,Medium
+78,75,4,None,Morning,30,25,Track,24,Very Light
+52,90,8,Heavy Rain,Afternoon,350,70,Mixed,67,Medium
+30,35,15,Snow,Night,950,130,Trail,125,Heavy
+70,85,5,Light Rain,Morning,100,40,Road,38,Light
+40,60,11,None,Evening,550,195,Mixed,190,Medium
+84,80,3,None,Afternoon,25,28,Track,27,Very Light
+56,75,7,Heavy Rain,Morning,300,65,Road,62,Medium
+26,30,16,None,Night,1100,145,Trail,140,Heavy
+66,90,6,Light Rain,Afternoon,150,45,Mixed,43,Light
+44,55,12,None,Evening,500,185,Road,180,Medium
+76,70,4,None,Morning,50,30,Track,29,Very Light
