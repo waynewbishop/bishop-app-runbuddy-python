@@ -1,22 +1,36 @@
 # Run Buddy: AI-Powered Running Outfit Recommender
 
-[Run Buddy](https://github.com/waynewbishop/bishop-app-runbuddy-swift) is an innovative iOS application that leverages machine learning to provide personalized running outfit recommendations based on current weather conditions. This repository contains the backend implementation of the Run Buddy system.
+The [Run Buddy](https://github.com/waynewbishop/bishop-app-runbuddy-swift) recommender leverages **machine learning** to provide personalized athletic clothing recommendations based on current weather conditions. 
 
-## Project Overview
+## Overview
 
-The core of Run Buddy is a machine learning model (RandomForestClassifier) that predicts appropriate running attire categories (very light, light, medium, heavy) based on temperature, humidity, and wind speed. The system is designed to enhance runners' experiences by suggesting suitable clothing while integrating brand partnerships for monetization.
+The core of Run Buddy is a machine learning model (RandomForestClassifier) that predicts appropriate running attire categories (very light, light, medium, heavy) based on temperature, humidity, and wind speed. The system is designed to enhance runners' experiences by suggesting suitable clothing while integrating brand partnerships.
 
 Key Features:
 - Weather-based outfit prediction using machine learning
 - JSON-based data management for model, brands, user preferences, and clothing interpretations
-- Flask API for seamless integration with the iOS frontend
+- Flask API for seamless integration with client applications
 - Continuous model improvement through user feedback
-- Brand rotation system for fair representation of partner brands
 
-The backend is built with Python, utilizing libraries such as scikit-learn for machine learning, Flask for API development, and joblib for model serialization. The system architecture includes a modular design with separate components for model management, data collection, API handling, and testing.
+The backend is built with Python, utilizing libraries such as **scikit-learn** for machine learning, Flask for API development, and **pandas** for model serialization. The system architecture includes a modular design with separate components for model management, data collection, API handling, and testing.
 
 This project aims to demonstrate the practical application of machine learning in everyday scenarios, providing value to runners while exploring opportunities for brand integration and personalized recommendations.
 
 Future enhancements may include more sophisticated data collection methods, advanced feature engineering, and integration with popular fitness tracking platforms for improved personalization.
 
-Contributors are welcome to help improve the model accuracy, expand the feature set, or enhance the API functionality.
+## Collaboration
+
+Contributors are welcome to [help improve](https://github.com/waynewbishop/bishop-app-runbuddy-python) the model accuracy, expand the feature set, or enhance the API functionality.
+
+## Other Projects
+
+- [bishop-algorithms-swift-package](https://github.com/waynewbishop/bishop-algorithms-swift-package) - Examples of commonly used algorithms and data structures in Swift Package format.
+- [bishop-app-runbuddy-swift](https://github.com/waynewbishop/bishop-app-runbuddy-swift) - Plan your next run using Generative AI. Implemented in Swift.
+
+## Usage
+
+Individuals are welcome to use the code with commercial and open-source projects. As a courtesy, please provide attribution to [waynewbishop.com](http://www.waynewbishop.com). For more information, review the complete license agreement.
+
+## Questions
+
+Have a question? Feel free to [contact me](https://www.linkedin.com/in/waynebishop/) online.
