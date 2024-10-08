@@ -22,8 +22,10 @@ class App:
         such as the data collection system and prediction model, and prepares
         the user interface for interaction.
         """
+
         pass
 
     # Other methods would follow here
 
-    # TODO: Build out functionality to train and evaluate model
+
+

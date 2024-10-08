@@ -1,5 +1,5 @@
 import unittest
-from app.run_buddy_model import RunBuddyModel
+from app.app import RunBuddyModel
 
 
 class MyTestCase(unittest.TestCase):
