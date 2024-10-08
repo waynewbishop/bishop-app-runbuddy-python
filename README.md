@@ -1,10 +1,10 @@
 # Run Buddy: AI-Powered Running Outfit Recommender
 
-The [Run Buddy](https://github.com/waynewbishop/bishop-app-runbuddy-swift) recommender leverages **machine learning** to provide personalized athletic clothing recommendations based on current weather conditions. 
+The [Run Buddy](https://github.com/waynewbishop/bishop-app-runbuddy-swift) recommender leverages machine learning to provide personalized athletic clothing recommendations based on current weather conditions. 
 
 ## Overview
 
-The core of Run Buddy is a machine learning model (RandomForestClassifier) that predicts appropriate running attire categories (very light, light, medium, heavy) based on temperature, humidity, and wind speed. The system is designed to enhance runners' experiences by suggesting suitable clothing while integrating brand partnerships.
+The core of Run Buddy is a machine learning model (RandomForestClassifier) that predicts appropriate running attire categories based on temperature, humidity, wind speed and other factors. The system is designed to enhance runners' experiences by suggesting suitable clothing while integrating brand partnerships.
 
 Key Features:
 - Weather-based outfit prediction using machine learning
@@ -12,15 +12,15 @@ Key Features:
 - Flask API for seamless integration with client applications
 - Continuous model improvement through user feedback
 
-The backend is built with Python, utilizing libraries such as **scikit-learn** for machine learning, Flask for API development, and **pandas** for model serialization. The system architecture includes a modular design with separate components for model management, data collection, API handling, and testing.
+The backend is built with Python, utilizing libraries such as **scikit-learn** for machine learning, **Flask** for API development, and **pandas** for model serialization. The system architecture includes a modular design with separate components for model management, data collection, API handling, and testing.
 
-This project aims to demonstrate the practical application of machine learning in everyday scenarios, providing value to runners while exploring opportunities for brand integration and personalized recommendations.
+This project aims to demonstrate the practical application of machine learning in everyday scenarios, providing value to athletes while exploring opportunities for brand integration and personalized recommendations.
 
-Future enhancements may include more sophisticated data collection methods, advanced feature engineering, and integration with popular fitness tracking platforms for improved personalization.
+Future plans include publishing modeling data and research to Kaggle as well as Google Colab. 
 
 ## Collaboration
 
-Contributors are welcome to [help improve](https://github.com/waynewbishop/bishop-app-runbuddy-python) the model accuracy, expand the feature set, or enhance the API functionality.
+Contributors are welcome to [help improve](https://github.com/waynewbishop/bishop-app-runbuddy-python/pulls) the model accuracy, expand the feature set, or enhance the API functionality.
 
 ## Other Projects
 
@@ -33,4 +33,4 @@ Individuals are welcome to use the code with commercial and open-source projects
 
 ## Questions
 
-Have a question? Feel free to [contact me](https://www.linkedin.com/in/waynebishop/) online.
+Have a question? Feel free to [contact me](https://www.linkedin.com/in/waynebishop/).
