@@ -6,7 +6,8 @@
   "weather_api": {
     "provider": "OpenWeatherMap",
     "api_key": "eb8839de2b9ee3a41932290e9cce5bbe",
-    "endpoint": "https://api.openweathermap.org/data/2.5/weather"
+    "endpoint": "https://api.openweathermap.org/data/2.5/weather",
+    "units": "imperial"
   },
   "ml_model": {
     "version": "1.0",
