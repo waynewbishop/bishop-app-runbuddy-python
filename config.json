@@ -1,0 +1,82 @@
+{
+  "app_settings": {
+    "version": "1.0.0",
+    "enable_analytics": true
+  },
+  "weather_api": {
+    "provider": "OpenWeatherMap",
+    "api_key": "eb8839de2b9ee3a41932290e9cce5bbe",
+    "endpoint": "https://api.openweathermap.org/data/2.5/weather"
+  },
+  "ml_model": {
+    "version": "1.0",
+    "description": "A machine learning model recommender for athletic clothing.",
+    "file_name": "run_buddy_model.pkl",
+    "update_frequency_days": 30
+  },
+  "brand_integration": {
+    "rotation_interval_hours": 24,
+    "sponsored_content_probability": 0.2,
+    "partners": [
+      {
+        "name": "Adidas",
+        "categories": ["top", "bottom"]
+      },
+      {
+        "name": "Rabbit",
+        "categories": ["top", "bottom", "accessories"]
+      },
+      {
+        "name": "Under Armour",
+        "categories": ["top"]
+      },
+      {
+        "name": "Brooks",
+        "categories": ["shoes"]
+      },
+      {
+        "name": "Asics",
+        "categories": ["shoes"]
+      },
+      {
+        "name": "Garmin",
+        "categories": ["accessories"]
+      }
+    ]
+  },
+  "clothing_categories": {
+    "very_light": {
+      "top": "Singlet or light t-shirt",
+      "bottom": "Short shorts",
+      "outer_layer": null,
+      "accessories": ["Cap", "Sunglasses"],
+      "shoes": "Lightweight running shoes"
+    },
+    "light": {
+      "top": "T-shirt",
+      "bottom": "Shorts",
+      "outer_layer": null,
+      "accessories": ["Cap", "Sunglasses"],
+      "shoes": "Running shoes"
+    },
+    "medium": {
+      "top": "Long sleeve shirt",
+      "bottom": "Tights or pants",
+      "outer_layer": "Light jacket",
+      "accessories": ["Gloves", "Headband"],
+      "shoes": "Running shoes"
+    },
+    "heavy": {
+      "top": "Thermal long sleeve",
+      "bottom": "Insulated tights",
+      "outer_layer": "Insulated jacket",
+      "accessories": ["Gloves", "Beanie", "Neck gaiter"],
+      "shoes": "Insulated running shoes"
+    }
+  },
+  "user_preferences": {
+    "default_run_duration": 45,
+    "default_terrain": "Road",
+    "preferred_brands": {}
+  }
+}
