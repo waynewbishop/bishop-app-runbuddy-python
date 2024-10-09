@@ -17,6 +17,9 @@
 .idea/dynamic.xml
 .idea/uiDesigner.xml
 
+#App-specific ignores
+config.json
+
 # Python-specific ignores
 __pycache__/
 *.py[cod]
