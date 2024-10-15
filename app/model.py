@@ -40,4 +40,7 @@ class Model:
 
         self._class_log.log('initializing data model')
 
+        # TODO: The model data also needs to include their gender for the recommender.
+        # The model needs to be trained on gender specific outcomes.
+
         pass

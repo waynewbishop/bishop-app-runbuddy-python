@@ -17,10 +17,10 @@ class Weather:
         """
 
         # initialization of JSON dictionary
-        self._config: List[Dict[str, Any]] = []
+        self._items: List[Dict[str, Any]] = []
 
 
-    def load_config(self):
+    def _config(self):
         """
         Attempts to load JSON data.
 
@@ -29,12 +29,12 @@ class Weather:
         """
 
         # check for instance
-        if not self._config:
+        if not self._items:
             return
 
         try:
             with open("../config.json", "r") as datafile:
-                self._config = json.load(datafile)
+                self._items = json.load(datafile)
                 print("json data loaded successfully.")
                 return
 
@@ -60,18 +60,19 @@ class Weather:
         # container for resulting weather data
         weather_data: List[Dict[str, Any]] = None
 
-        # check for empty list
-        if not self._config:
-            self.load_config()
+        # check for empty configuration list
+        if not self._items:
+            self._config()
+
 
         # set the json api key
-        api_key = self._config['weather_api']['api_key']
+        api_key = self._items['weather_api']['api_key']
 
         # set the default weather units
-        units = self._config['weather_api']['units']
+        units = self._items['weather_api']['units']
 
         # set the url endpoint
-        base_url = self._config['weather_api']['endpoint']
+        base_url = self._items['weather_api']['endpoint']
 
         # set the full url with querystring
         url = f"{base_url}?lat={lat}&lon={lon}&appid={api_key}&units={units}"
@@ -99,6 +100,8 @@ class Weather:
         forecast_current = datetime.fromtimestamp(closest['dt'], tz=timezone.utc)
 
         # TODO: Build out a condensed JSON model containing only the info I need.
+        # However, there's only a single record.
+
 
         # review final results
         print(f"closest forecast time is {forecast_current}: \n{closest}")
@@ -115,3 +118,11 @@ class Weather:
         current_timestamp = datetime.now(timezone.utc).timestamp()
 
         return min(forecasts, key=lambda forecast: abs(forecast['dt'] - current_timestamp))
+
+
+
+# let's load and test an instance of the weather model.
+latitude, longitude = 37.7749, -122.4194  # San Francisco coordinates
+weather = Weather()
+weather.get_weather(latitude, longitude)
+
