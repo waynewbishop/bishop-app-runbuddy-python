@@ -48,13 +48,25 @@ class Weather:
             print(f"An unexpected error occurred: {e}")
 
 
-    def get_weather(self, lat: float, lon: float):
+
+    def get_elevation(self, lat: float, long: float):
+        """
+        Obtains elevation from specific coordinates
+        :param lat:
+        :param long:
+        :return:
+        """
+
+        pass
+
+
+    def get_weather(self, lat: float, lon: float) -> List[Dict[str, Any]]:
         """
         Obtains the weather forecast for the current date
         and location.
         :param lat: Latitude
         :param lon: Longitude
-        :return: A tuple containing the temperature,
+        :return: The current weather forecast (time-based)
         """
 
         # container for resulting weather data
@@ -111,18 +123,10 @@ class Weather:
     def _filter_forecast(forecasts) -> List[Dict[str, Any]]:
         """
         Helper method that iterates through the
-        daily forecasts and find the closest match to the current datetime.
+        daily forecasts (up to 8) and find the closest match to the current datetime.
         :param forecasts:
-        :return:
+        :return: the closest forecast
         """
         current_timestamp = datetime.now(timezone.utc).timestamp()
 
         return min(forecasts, key=lambda forecast: abs(forecast['dt'] - current_timestamp))
-
-
-
-# let's load and test an instance of the weather model.
-latitude, longitude = 37.7749, -122.4194  # San Francisco coordinates
-weather = Weather()
-weather.get_weather(latitude, longitude)
-

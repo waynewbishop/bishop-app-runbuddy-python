@@ -29,22 +29,15 @@ class Data:
 
         self._vector = List[float]
 
+
     @staticmethod
-    def prepare_vector(lat, long):  #37.7749, -122.4194
+    def prepare_vector():
+
         """
         Prepares model vector.py for model evaluation.
 
         :return:
         """
-
-        # new weather instance
-        w = Weather()
-        w.get_weather(lat, long)
-
-        # TODO; let's also make a call to obtain the elevation based on the coordinates.
-
-        # TODO:
-
 
     @staticmethod
     def _get_elevation(lat, long):

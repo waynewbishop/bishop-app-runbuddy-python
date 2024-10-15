@@ -1,8 +1,8 @@
+from app.model import Model
 import unittest
-from app.app import RunBuddyModel
 
 
-class MyTestCase(unittest.TestCase):
+class ModelTests(unittest.TestCase):
     """
     MyTestCase class contains unit tests for the RunBuddyModel class.
 
@@ -12,7 +12,6 @@ class MyTestCase(unittest.TestCase):
     to utilize Python's built-in testing framework.
 
     Attributes:
-        model (RunBuddyModel): An instance of RunBuddyModel to be used in tests.
 
     Methods:
         setUp: Method to set up the test environment before each test.
@@ -28,7 +27,6 @@ class MyTestCase(unittest.TestCase):
         This method is called before each test method is executed.
         It can be used to initialize the RunBuddyModel or set up any necessary test data.
         """
-        self.model = RunBuddyModel()
 
     def tearDown(self):
         """
@@ -48,6 +46,7 @@ class MyTestCase(unittest.TestCase):
         focus on a specific aspect of the model's behavior.
         """
         self.assertEqual(True, False)  # This assertion will always fail and should be replaced
+
 
 # This block allows the tests to be run from the command line
 if __name__ == '__main__':
