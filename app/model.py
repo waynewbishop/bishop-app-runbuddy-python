@@ -1,4 +1,3 @@
-
 from logger import AppLog
 from typing import List, Dict, Any
 

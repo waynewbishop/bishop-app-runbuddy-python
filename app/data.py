@@ -1,6 +1,6 @@
 from typing import List
-
 from app.weather import Weather
+from logger import AppLog
 
 
 class Data:

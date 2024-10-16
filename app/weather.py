@@ -1,6 +1,5 @@
-
-import urllib.request
-import urllib.error
+import requests
+import certifi
 import json
 
 from datetime import datetime, timezone
@@ -8,56 +7,35 @@ from typing import List, Dict, Any
 
 
 class Weather:
-    """
 
-    """
     def __init__(self):
         """
-        Provides class initialization
+        Used to obtain current weather information.
         """
 
-        # initialization of JSON dictionary
+        # item dictionary and logger
         self._items: List[Dict[str, Any]] = []
 
 
     def _config(self):
         """
-        Attempts to load JSON data.
-
         Provides configuration options for entire recommender service
         :return:
         """
 
         # check for instance
-        if not self._items:
+        if self._items:
             return
 
         try:
             with open("../config.json", "r") as datafile:
                 self._items = json.load(datafile)
-                print("json data loaded successfully.")
+                print("config data loaded successfully.")
                 return
-
-        except FileNotFoundError:
-            print("Error: The file '30DayQuakes.json' was not found.")
-
-        except json.JSONDecodeError:
-            print("Error: The file contains invalid JSON.")
 
         except Exception as e:
             print(f"An unexpected error occurred: {e}")
 
-
-
-    def get_elevation(self, lat: float, long: float):
-        """
-        Obtains elevation from specific coordinates
-        :param lat:
-        :param long:
-        :return:
-        """
-
-        pass
 
 
     def get_weather(self, lat: float, lon: float) -> List[Dict[str, Any]]:
@@ -77,7 +55,7 @@ class Weather:
             self._config()
 
 
-        # set the json api key
+        # set the api key
         api_key = self._items['weather_api']['api_key']
 
         # set the default weather units
@@ -90,33 +68,29 @@ class Weather:
         url = f"{base_url}?lat={lat}&lon={lon}&appid={api_key}&units={units}"
 
         try:
-            # initiate the connection
-            with urllib.request.urlopen(url) as response:
-                data = response.read().decode()
+            # Make the API request using certifi for SSL verification
+            response = requests.get(url, verify=certifi.where())
+            response.raise_for_status()
 
-            weather_data = json.loads(data)
+            # Parse the JSON response
+            weather_data = response.json()
 
-        except urllib.error.URLError as e:
-            print(f"Error accessing URL: {e}")  # replace with log statement
+            # TODO: Replace with a return Dict of custom results..
 
-        except json.JSONDecodeError as e:
-            print(f"Error decoding JSON: {e}")  # replace with log statement
+            # obtain current forecast - not needed
+            forecasts = weather_data['list']
 
-        # obtain forecasts
-        forecasts = weather_data['list']
+            # Find the closest matching forecast - remove not needed
+            closest = self._filter_forecast(forecasts)
 
-        # Find the closest matching forecast
-        closest = self._filter_forecast(forecasts)
+            # Convert the timestamp to a datetime object for readability - not needed
+            forecast_current = datetime.fromtimestamp(closest['dt'], tz=timezone.utc)
 
-        # Convert the timestamp to a datetime object for readability
-        forecast_current = datetime.fromtimestamp(closest['dt'], tz=timezone.utc)
+            # review final results - not needed
+            print(f"closest forecast time is {forecast_current}: \n{closest}")
 
-        # TODO: Build out a condensed JSON model containing only the info I need.
-        # However, there's only a single record.
-
-
-        # review final results
-        print(f"closest forecast time is {forecast_current}: \n{closest}")
+        except requests.exceptions.RequestException as e:
+            print(f"An error occurred: {e}")
 
 
     @staticmethod

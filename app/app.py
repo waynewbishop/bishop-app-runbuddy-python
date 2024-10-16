@@ -1,3 +1,5 @@
+from logger import AppLog
+
 
 class App:
     """

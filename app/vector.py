@@ -1,3 +1,4 @@
+from logger import AppLog
 
 
 class Vector:
